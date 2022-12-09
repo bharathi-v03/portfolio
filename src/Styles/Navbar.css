@@ -1,0 +1,126 @@
+.Header {
+    display: flex;
+    align-items: center;
+    color: var(--textColor);
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 100;
+    padding: 0 6rem;
+    transition: 0.3s ease-in-out;
+}
+
+.Navbar__Title {
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.Navbar__Link1,
+.Navbar__Link2,
+.Navbar__Link3,
+.Navbar__Link4 {
+    text-decoration: none;
+    transition-duration: 0.2s;
+    cursor: pointer;
+}
+
+.Navbar__Link1:hover,
+.Navbar__Link2:hover,
+.Navbar__Link3:hover,
+.Navbar__Link4:hover {
+    transform: scale(1.2);
+}
+
+.Navbar__Link1,
+.Navbar__Link2,
+.Navbar__Link3 {
+    margin-right: 3rem;
+}
+
+.Header .Navbar__Button {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--textColor);
+    display: none;
+    height: 1.3rem;
+    width: 1.3rem;
+    font-size: 1.3rem;
+}
+
+.Header div,
+.Navbar__Brand {
+    display: flex;
+    align-items: center;
+}
+
+.Navbar__Items {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    height: 30px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .Header {
+        padding: 0 2rem;
+    }
+
+    .Navbar__Link1,
+    .Navbar__Link2,
+    .Navbar__Link3 {
+        margin-right: 0;
+    }
+
+    .Navbar__Link1,
+    .Navbar__Link2,
+    .Navbar__Link3,
+    .Navbar__Link4 {
+        color: var(--mainColorDark);
+    }
+
+    .Header .Navbar__Button {
+        display: block;
+        margin-left: auto;
+    }
+
+    .Header .Navbar__Items {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        background-color: var(--textColor);
+        transition: 0.3s;
+        transform: translateX(100vh);
+    }
+
+    .Navbar__LinkText {
+        font-size: smaller;
+    }
+
+    .Header .Navbar__Responsive {
+        transform: none;
+    }
+
+    .Navbar__Items .Navbar__CloseButton {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        color: var(--mainColorDark);
+    }
+
+    .Navbar__Items a {
+        font-size: 1rem;
+    }
+}
