@@ -6,7 +6,7 @@
 }
 
 .Home__Intro {
-    padding: 10vh 6rem;
+    padding: 5vh 6rem;
 }
 
 .Home__Text {
@@ -28,6 +28,23 @@
     text-shadow: 3px 3px var(--mainColorDark);
 }
 
+.Home__Icons {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+    font-size: xx-large;
+    margin-top: 1rem;
+}
+
+.Home__Icon {
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.Home__Icon:hover {
+    transform: scale(1.1);
+}
+
 .Resume {
     font-family: 'Poppins', sans-serif;
     border: 3px solid var(--textColor);
@@ -36,7 +53,7 @@
     font-weight: bold;
     cursor: pointer;
     padding: 15px;
-    margin-top: 1rem;
+    margin-top: 2rem;
     transition: 0.5s;
 }
 

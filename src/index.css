@@ -1,6 +1,7 @@
 :root {
   --mainColor: rgb(105 25 255);
   --mainColorDark: rgb(120, 0, 176);
+  --seaBlue: rgb(0, 220, 209);
   --textColor: white;
 }
 
@@ -12,6 +13,7 @@ html {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {

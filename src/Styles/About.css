@@ -1,0 +1,111 @@
+.About {
+    background-image: linear-gradient(to bottom, var(--seaBlue), var(--mainColor));
+    width: 100vw;
+    height: 100vh;
+    color: var(--textColor);
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.About__Col1,
+.About__Img {
+    width: 50vw;
+    height: 100vh;
+}
+
+.About__Img {
+    object-fit: cover;
+}
+
+.About__Col2 {
+    padding: 6rem;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.About__Title {
+    font-size: 300%;
+    font-weight: bold;
+    text-shadow: 3px 3px var(--mainColorDark);
+}
+
+.Logo__Images {
+    display: flex;
+    flex-direction: row;
+    column-gap: 5rem;
+    row-gap: 3rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.Logo {
+    width: 75px;
+    height: 75px;
+    object-fit: contain;
+    filter: drop-shadow(10px 10px 10px var(--mainColorDark));
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.Logo:hover {
+    transform: translateY(-10px)
+}
+
+@media only screen and (max-width: 1180px) {
+    .About {
+        flex-direction: column;
+    }
+
+    .About__Col1,
+    .About__Img {
+        width: 100vw;
+        height: 30vw;
+    }
+
+    .About__Col2 {
+        padding: 0 2rem;
+    }
+
+    .About__Title {
+        font-size: 200%;
+    }
+
+    .Logo__Images {
+        column-gap: 3rem;
+        row-gap: 2rem;
+        margin-top: 2rem;
+    }
+
+    .Logo {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .About__Col1,
+    .About__Img {
+        width: 100vw;
+        height: 70vw;
+    }
+
+    .About__Col2 p{
+        font-size: small;
+    }
+
+    .Logo {
+        width: 35px;
+        height: 35px;
+    }
+
+    .Logo__Images {
+        column-gap: 2rem;
+        row-gap: 1rem;
+        margin-top: 2rem;
+    }
+}
