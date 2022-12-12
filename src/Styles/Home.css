@@ -1,12 +1,14 @@
 .Home {
-    background-image: linear-gradient(to bottom, var(--mainColor), var(--mainColorDark));
     width: 100vw;
-    height: calc(100vh - 10rem);
+    height: calc(100vh - 5rem);
     color: var(--textColor);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .Home__Intro {
-    padding: 5vh 6rem;
+    padding: 0 6rem;
 }
 
 .Home__Text {
@@ -26,6 +28,7 @@
     font-size: 400%;
     font-weight: bold;
     text-shadow: 3px 3px var(--mainColorDark);
+    color: var(--textColorBlue);
 }
 
 .Home__Icons {
@@ -47,7 +50,7 @@
 
 .Resume {
     font-family: 'Poppins', sans-serif;
-    border: 3px solid var(--textColor);
+    border: 3px solid var(--textColorBlue);
     color: var(--textColor);
     background-color: transparent;
     font-weight: bold;
@@ -58,8 +61,8 @@
 }
 
 .Resume:hover {
-    color: var(--mainColorDark);
-    background-color: var(--textColor);
+    color: var(--GrayDark);
+    background-color: var(--textColorBlue);
 }
 
 @media only screen and (max-width: 1024px) {

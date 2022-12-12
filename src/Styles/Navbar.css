@@ -1,9 +1,8 @@
 .Header {
     display: flex;
     align-items: center;
-    color: var(--textColor);
     position: sticky;
-    position: -webkit-sticky;
+    height: 5rem;
     top: 0;
     z-index: 100;
     padding: 0 6rem;
@@ -44,7 +43,6 @@
     background: transparent;
     border: none;
     outline: none;
-    color: var(--textColor);
     display: none;
     height: 1.3rem;
     width: 1.3rem;
@@ -81,7 +79,7 @@
     .Navbar__Link2,
     .Navbar__Link3,
     .Navbar__Link4 {
-        color: var(--mainColorDark);
+        color: var(--textColor);
     }
 
     .Header .Navbar__Button {
@@ -100,7 +98,7 @@
         align-items: center;
         justify-content: center;
         gap: 1.5rem;
-        background-color: var(--textColor);
+        background-color: var(--black);
         transition: 0.3s;
         transform: translateX(100vh);
     }
@@ -117,7 +115,7 @@
         position: absolute;
         top: 2rem;
         right: 2rem;
-        color: var(--mainColorDark);
+        color: var(--textColorBlue);
     }
 
     .Navbar__Items a {

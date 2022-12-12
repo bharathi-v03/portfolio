@@ -1,8 +1,14 @@
 :root {
-  --mainColor: rgb(105 25 255);
+  /* --mainColor: rgb(105 25 255);
   --mainColorDark: rgb(120, 0, 176);
   --seaBlue: rgb(0, 220, 209);
-  --textColor: white;
+  --seaGreen: rgb(0, 220, 117);
+  --textColor: white; */
+  --black: #0B0C10;
+  --GrayDark: #1F2833;
+  --textColorBlue: #66FCF1;
+  --textColor: #C5C6C7;
+  --blueLight: #45A29E;
 }
 
 #root {

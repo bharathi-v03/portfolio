@@ -1,5 +1,4 @@
 .About {
-    background-image: linear-gradient(to bottom, var(--seaBlue), var(--mainColor));
     width: 100vw;
     height: 100vh;
     color: var(--textColor);
@@ -9,45 +8,56 @@
 }
 
 .About__Col1,
-.About__Img {
+.About__Col2 {
     width: 50vw;
     height: 100vh;
+    padding: 0 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.About__Img {
-    object-fit: cover;
+.About__Col1 {
+    background-color: var(--GrayDark);
 }
 
 .About__Col2 {
-    padding: 6rem;
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; */
-    justify-content: center;
+    background-color: var(--blueLight);
 }
 
 .About__Title {
     font-size: 300%;
     font-weight: bold;
-    text-shadow: 3px 3px var(--mainColorDark);
+    margin-top: 0;
+    margin-bottom: 1vw;
+    color: var(--textColorBlue);
+}
+
+.About__Title2 {
+    text-align: center;
+    font-size: 300%;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 1vw;
+    color: var(--GrayDark);
 }
 
 .Logo__Images {
     display: flex;
     flex-direction: row;
-    column-gap: 5rem;
-    row-gap: 3rem;
+    column-gap: 5vw;
+    row-gap: 3vw;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin-top: 3rem;
+    margin-top: 3vw;
 }
 
 .Logo {
-    width: 75px;
-    height: 75px;
+    width: 5vw;
+    height: 5vw;
     object-fit: contain;
-    filter: drop-shadow(10px 10px 10px var(--mainColorDark));
+    filter: drop-shadow(10px 10px 10px #1f2833c9);
     cursor: pointer;
     transition: 0.5s;
 }
@@ -56,56 +66,35 @@
     transform: translateY(-10px)
 }
 
-@media only screen and (max-width: 1180px) {
-    .About {
-        flex-direction: column;
-    }
+@media only screen and (max-width: 1024px) {
 
-    .About__Col1,
-    .About__Img {
-        width: 100vw;
-        height: 30vw;
+    .About__Col1 {
+        padding: 0 2rem;
     }
 
     .About__Col2 {
         padding: 0 2rem;
     }
 
-    .About__Title {
+    .About__Title,
+    .About__Title2 {
         font-size: 200%;
-    }
-
-    .Logo__Images {
-        column-gap: 3rem;
-        row-gap: 2rem;
-        margin-top: 2rem;
-    }
-
-    .Logo {
-        width: 50px;
-        height: 50px;
     }
 }
 
-@media only screen and (max-width: 400px) {
-    .About__Col1,
-    .About__Img {
-        width: 100vw;
-        height: 70vw;
+@media only screen and (max-width: 500px) {
+    .About {
+        flex-direction: column;
     }
 
-    .About__Col2 p{
-        font-size: small;
+    .About__Col1,
+    .About__Col2 {
+        height: 50vh;
+        width: calc(100vw - 4rem);
     }
 
     .Logo {
-        width: 35px;
-        height: 35px;
-    }
-
-    .Logo__Images {
-        column-gap: 2rem;
-        row-gap: 1rem;
-        margin-top: 2rem;
+        width: 60px;
+        height: 60px;
     }
 }

@@ -5,7 +5,7 @@ import { BsGithub } from "react-icons/bs";
 
 function Home() {
     return (
-        <div className='Home'>
+        <div className='Home' id='Home'>
             <div className='Home__Intro'>
                 <div className='Home__Text'>
                     <p>Welcome to my world!</p>

@@ -13,19 +13,11 @@ function Navbar() {
         navRef.current.classList.toggle("Navbar__Responsive");
     };
 
-    const Scroll = () => {
-        document.body.scrollTop = document.documentElement.scrollTop = 0
-    }
-
-    const scrollToAbout = () => {
-        document.body.scrollTop = document.documentElement.scrollTop = window.innerHeight
-    }
-
-    const [navSize, setnavSize] = useState("10rem");
-    const [navColor, setnavColor] = useState("rgb(105 25 255)");
+    const [navColor, setnavColor] = useState("transparent");
+    const [color, setColor] = useState("#C5C6C7")
     const listenScrollEvent = () => {
-        window.scrollY > 10 ? setnavColor("rgba(120, 0, 176, 0.782)") : setnavColor("rgb(105 25 255)");
-        window.scrollY > 10 ? setnavSize("5rem") : setnavSize("10rem");
+        window.scrollY > 10 ? setnavColor("#66fcf2cd") : setnavColor("transparent");
+        window.scrollY > 10 ? setColor("#1F2833") : setColor("#C5C6C7");
     };
     useEffect(() => {
         window.addEventListener("scroll", listenScrollEvent);
@@ -35,23 +27,22 @@ function Navbar() {
     }, []);
 
     return (
-        <div className="Header"
+        <div className="Header" id="Header"
             style={{
                 backgroundColor: navColor,
-                height: navSize,
-                transition: "all 1s"
+                color: color
             }}>
-            <div className='Navbar__Title' onClick={() => Scroll()}>
+            <div className='Navbar__Title' onClick={() => document.getElementById('Header').scrollIntoView()}>
                 {"<BharathiV />"}
             </div>
             <nav ref={navRef} className='Navbar__Items'>
-                <div onClick={() => { showNavbar(); scrollToAbout(); }}
+                <div onClick={() => { showNavbar(); document.getElementById('About').scrollIntoView() }}
                     className="Navbar__Link1"><p className="Navbar__LinkText">ABOUT</p></div>
-                <div onClick={() => { showNavbar() }}
+                <div onClick={() => { showNavbar(); document.getElementById('Project').scrollIntoView() }}
                     className="Navbar__Link2"><p className="Navbar__LinkText">PROJECTS</p></div>
-                <div onClick={() => { showNavbar() }}
+                <div onClick={() => { showNavbar(); }}
                     className="Navbar__Link3"><p className="Navbar__LinkText">EXPERIENCE</p></div>
-                <div onClick={() => { showNavbar() }}
+                <div onClick={() => { showNavbar(); }}
                     className="Navbar__Link4"><p className="Navbar__LinkText">CONTACT</p></div>
                 <button
                     className="Navbar__Button Navbar__CloseButton"
@@ -59,7 +50,11 @@ function Navbar() {
                     <FaTimes />
                 </button>
             </nav>
-            <button className="Navbar__Button" onClick={showNavbar}>
+            <button className="Navbar__Button"
+                style={{
+                    color: color
+                }}
+                onClick={showNavbar}>
                 <FaBars />
             </button>
         </div>
