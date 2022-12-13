@@ -5,6 +5,8 @@
     display: flex;
     flex-direction: row;
     overflow: hidden;
+    position: relative;
+    z-index: 40;
 }
 
 .About__Col1,

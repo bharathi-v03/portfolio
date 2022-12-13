@@ -2,11 +2,13 @@ import React from 'react';
 import "../Styles/Home.css";
 import { ImLinkedin } from "react-icons/im";
 import { BsGithub } from "react-icons/bs";
+import logo from '../Images/logo.svg';
 
 function Home() {
     return (
         <div className='Home' id='Home'>
             <div className='Home__Intro'>
+                <img src={logo} className="App-logo" alt="logo" />
                 <div className='Home__Text'>
                     <p>Welcome to my world!</p>
                     <h1 className='Home__Name'>Hi, I'm Bharathi.</h1>
