@@ -1,37 +1,37 @@
-.Home {
+.Contact {
     width: 100vw;
-    height: calc(100vh - 5rem);
+    height: 100vh;
     color: var(--textColor);
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.Home__Intro {
+.Contact__Intro {
     padding: 0 6rem;
 }
 
-.Home__Text {
+.Contact__Text {
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
 }
 
-.Home__Text p,
-.Home__Name,
-.Home__Role {
+.Contact__Text p,
+.Contact__Name,
+.Contact__Role {
     margin: 0;
 }
 
-.Home__Name,
-.Home__Role {
+.Contact__Name,
+.Contact__Role {
     font-size: 400%;
     font-weight: bold;
     text-shadow: 3px 3px var(--mainColorDark);
     color: var(--textColorBlue);
 }
 
-.Home__Icons {
+.Contact__Icons {
     display: flex;
     flex-direction: row;
     column-gap: 1rem;
@@ -39,16 +39,16 @@
     margin-top: 1rem;
 }
 
-.Home__Icon {
+.Contact__Icon {
     transition: 0.3s;
     cursor: pointer;
 }
 
-.Home__Icon:hover {
+.Contact__Icon:hover {
     transform: scale(1.2);
 }
 
-.Resume {
+.Contact__Resume {
     font-family: 'Poppins', sans-serif;
     border: 3px solid var(--textColorBlue);
     color: var(--textColor);
@@ -60,7 +60,7 @@
     transition: 0.5s;
 }
 
-.Resume:hover {
+.Contact__Resume:hover {
     color: var(--GrayDark);
     background-color: var(--textColorBlue);
 }
@@ -68,12 +68,12 @@
 @media only screen and (max-width: 1024px) {
 
 
-    .Home__Intro {
+    .Contact__Intro {
         padding: 0 2rem;
     }
 
-    .Home__Name,
-    .Home__Role {
+    .Contact__Name,
+    .Contact__Role {
         font-size: 200%;
     }
 }

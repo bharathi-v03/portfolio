@@ -4,6 +4,8 @@ import Home from './Components/Home';
 import Navbar from './Components/Navbar';
 import About from './Components/About';
 import Project from './Components/Project';
+import Work from './Components/Work';
+import Contact from './Components/Contact';
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
         <Home />
         <About />
         <Project />
+        <Work />
+        <Contact />
       </Router>
     </div>
   );

@@ -9,7 +9,7 @@ function Home() {
             <div className='Home__Intro'>
                 <div className='Home__Text'>
                     <p>Welcome to my world!</p>
-                    <h1 className='Home__Name'>Hi, I'm Bharathi</h1>
+                    <h1 className='Home__Name'>Hi, I'm Bharathi.</h1>
                     <h1 className='Home__Role'>Front-End Web Developer.</h1>
                 </div>
                 <div className='Home__Icons'>

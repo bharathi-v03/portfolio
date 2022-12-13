@@ -91,7 +91,8 @@
         position: fixed;
         top: 0;
         right: 0;
-        height: 100%;
+        /* deducting border of 4px */
+        height: calc(100% - 4px);
         width: 50%;
         display: flex;
         flex-direction: column;
@@ -100,7 +101,8 @@
         gap: 1.5rem;
         background-color: var(--black);
         transition: 0.3s;
-        transform: translateX(100vh);
+        transform: translateX(calc(100vh - 4px));
+        border: 2px solid var(--textColorBlue);
     }
 
     .Navbar__LinkText {

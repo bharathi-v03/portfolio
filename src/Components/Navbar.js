@@ -32,7 +32,7 @@ function Navbar() {
                 backgroundColor: navColor,
                 color: color
             }}>
-            <div className='Navbar__Title' onClick={() => document.getElementById('Header').scrollIntoView()}>
+            <div className='Navbar__Title' onClick={() => document.body.scrollTop = document.documentElement.scrollTop = 0}>
                 {"<BharathiV />"}
             </div>
             <nav ref={navRef} className='Navbar__Items'>
@@ -40,9 +40,9 @@ function Navbar() {
                     className="Navbar__Link1"><p className="Navbar__LinkText">ABOUT</p></div>
                 <div onClick={() => { showNavbar(); document.getElementById('Project').scrollIntoView() }}
                     className="Navbar__Link2"><p className="Navbar__LinkText">PROJECTS</p></div>
-                <div onClick={() => { showNavbar(); }}
-                    className="Navbar__Link3"><p className="Navbar__LinkText">EXPERIENCE</p></div>
-                <div onClick={() => { showNavbar(); }}
+                <div onClick={() => { showNavbar(); document.getElementById('Work').scrollIntoView() }}
+                    className="Navbar__Link3"><p className="Navbar__LinkText">WORK</p></div>
+                <div onClick={() => { showNavbar(); document.getElementById('Contact').scrollIntoView() }}
                     className="Navbar__Link4"><p className="Navbar__LinkText">CONTACT</p></div>
                 <button
                     className="Navbar__Button Navbar__CloseButton"

@@ -108,6 +108,7 @@ span.blue-overlay {
     color: var(--textColorBlue);
     transition: 0.5s;
     cursor: pointer;
+    font-weight: bold;
 }
 
 .git {
@@ -136,5 +137,9 @@ span.blue-overlay {
         flex-direction: column;
         height: 800px;
         width: calc(100vw - 4rem);
+    }
+
+    .Project__Title{
+        font-size: 200%;
     }
 }

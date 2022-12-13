@@ -46,7 +46,7 @@
     display: flex;
     flex-direction: row;
     column-gap: 5vw;
-    row-gap: 3vw;
+    row-gap: 5vw;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
@@ -60,10 +60,36 @@
     filter: drop-shadow(10px 10px 10px #1f2833c9);
     cursor: pointer;
     transition: 0.5s;
+    position: relative;
+    z-index: 60;
 }
 
 .Logo:hover {
     transform: translateY(-10px)
+}
+
+.L__Div {
+    display: flex;
+    flex-direction: column;
+}
+
+.L__Div p {
+    text-align: center;
+    color: var(--GrayDark);
+    font-size: small;
+    font-weight: bold;
+    opacity: 0;
+    vertical-align: 20px;
+    transition: 0.5s;
+    margin: 0;
+    margin-top: -15px;
+    position: relative;
+    z-index: 50;
+}
+
+.L__Div:hover>p {
+    opacity: 1;
+    transform: translateY(10px);
 }
 
 @media only screen and (max-width: 1024px) {
@@ -94,7 +120,7 @@
     }
 
     .Logo {
-        width: 60px;
-        height: 60px;
+        width: 50px;
+        height: 50px;
     }
 }
