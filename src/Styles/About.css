@@ -73,6 +73,7 @@
 .L__Div {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .L__Div p {
