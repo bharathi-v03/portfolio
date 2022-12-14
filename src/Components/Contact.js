@@ -29,10 +29,6 @@ function Contact() {
                     <BsGithub className='Contact__Icon' onClick={() => { window.location.assign("https://github.com/bharathi-v03") }} />
                     <ImLinkedin className='Contact__Icon' onClick={() => { window.location.assign("https://www.linkedin.com/in/bharathi-vikas") }} />
                 </div>
-                <button className='Contact__Resume'
-                    onClick={() => { window.location.assign("https://www.canva.com/design/DAEIgRNlSDw/3IgNnmsQ6StJb3Szm89OYA/view?utm_content=DAEIgRNlSDw&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink") }}>
-                    View Resume
-                </button>
             </div>
         </div>
     );

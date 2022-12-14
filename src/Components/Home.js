@@ -19,7 +19,7 @@ function Home() {
                     <ImLinkedin className='Home__Icon' onClick={() => { window.location.assign("https://www.linkedin.com/in/bharathi-vikas") }} />
                 </div>
                 <button className='Resume'
-                    onClick={() => { window.location.assign("https://www.canva.com/design/DAEIgRNlSDw/3IgNnmsQ6StJb3Szm89OYA/view?utm_content=DAEIgRNlSDw&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink") }}>
+                    onClick={() => { window.location.assign("https://www.canva.com/design/DAFUuD917Bo/view") }}>
                     View Resume
                 </button>
             </div>
