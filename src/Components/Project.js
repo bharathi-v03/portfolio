@@ -18,7 +18,7 @@ function Project() {
                         <h2 className='Project__Info__Title'>INVOICE-CRUD</h2>
                         <p className='Project__Caption'>Invoice Generator with CRUD Operations</p>
                         <div className='Project__Techs'>
-                            <div className='Techs'>REACT</div>
+                            <div className='Techs'>REACTJS</div>
                             <div className='Techs'>MATERIAL-UI</div>
                             <div className='Techs'>MOCKAPI.IO</div>
                             <div className='Techs'>FRAMER-MOTION</div>
