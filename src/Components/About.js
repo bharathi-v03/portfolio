@@ -5,6 +5,7 @@ import CSS3 from "../Images/Logos/css3.png";
 import Js from "../Images/Logos/js.png";
 import reactjs from "../Images/Logos/reactjs.png";
 import redux from "../Images/Logos/redux.png";
+import mui from "../Images/Logos/material-ui.svg";
 import bootstrap from "../Images/Logos/bootstrap.png";
 
 function About() {
@@ -40,6 +41,10 @@ function About() {
                     <div className='L__Div'>
                         <img className='Logo' src={bootstrap} alt='' title='Bootstrap' />
                         <p>Bootstrap</p>
+                    </div>
+                    <div className='L__Div'>
+                        <img className='Logo' src={mui} alt='' title='Material UI' />
+                        <p>Material UI</p>
                     </div>
                 </div>
             </div>
