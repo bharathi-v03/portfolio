@@ -10,17 +10,15 @@
 }
 
 .Project__Content {
-    display: flex;
-    flex-direction: row;
-    column-gap: 2rem;
-    row-gap: 2rem;
-    height: 400px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 2rem;
     width: calc(100vw - 12rem - 2rem);
     color: var(--textColorBlue);
 }
 
 .Project1 {
-    flex: 50%;
+    height: 30vw;
     border: 2px solid var(--textColorBlue);
     overflow: hidden;
     position: relative;
@@ -112,7 +110,7 @@ span.blue-overlay {
 }
 
 .git {
-    vertical-align: -1px;
+    vertical-align: -2px;
 }
 
 .Project__Btn:hover {
@@ -134,12 +132,15 @@ span.blue-overlay {
     }
 
     .Project__Content {
-        flex-direction: column;
-        height: 800px;
+        grid-template-columns: auto;
         width: calc(100vw - 4rem);
     }
 
-    .Project__Title{
+    .Project1 {
+        height: calc(100vw - 4rem);
+    }
+
+    .Project__Title {
         font-size: 200%;
     }
 }
