@@ -96,7 +96,7 @@
 
 @media only screen and (max-width: 1024px) {
     .Work {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .Work__Col1,
