@@ -169,6 +169,7 @@ span.blue-overlay {
 
     .Project__Card {
         min-height: initial;
+        padding: 0.5rem;
     }
 
     .Project__Title {

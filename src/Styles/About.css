@@ -114,9 +114,15 @@
 @media only screen and (max-width: 500px) {
     .About {
         flex-direction: column;
+        height: auto;
     }
 
-    .About__Col1,
+    .About__Col1 {
+        height: auto;
+        width: calc(100vw - 4rem);
+        padding: 2rem 2rem;
+    }
+
     .About__Col2 {
         height: 50vh;
         width: calc(100vw - 4rem);

@@ -105,10 +105,17 @@
 @media only screen and (max-width: 1024px) {
     .Work {
         flex-direction: column-reverse;
+        height: auto;
     }
 
-    .Work__Col1,
     .Work__Col2 {
+        min-height: 50vh;
+        height: auto;
+        width: calc(100vw - 4rem);
+        padding: 0 2rem;
+    }
+
+    .Work__Col1 {
         height: 50vh;
         width: calc(100vw - 4rem);
         padding: 0 2rem;
