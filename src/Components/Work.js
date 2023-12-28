@@ -20,17 +20,17 @@ function Work() {
                 <h1 className='Work__Title'>Experience</h1>
                 <div className='Exp__div'>
                     <h2 className='Work__Clg'>
-                        <img className='Work__Logo' src={Infy} alt='' /> Infosys Limited
-                    </h2>
-                    <p className='Work__Role'>Systems Engineer</p>
-                    <p className='Year2'>AUG 2021 - Apr 2023</p>
-                </div>
-                <div className='Exp__div'>
-                    <h2 className='Work__Clg'>
                         <img className='Work__Logo' src={Tcs} alt='' /> Tata Consultancy Services
                     </h2>
                     <p className='Work__Role'>Systems Engineer</p>
                     <p className='Year2'>Jul 2023 - Present</p>
+                </div>
+                <div className='Exp__div'>
+                    <h2 className='Work__Clg'>
+                        <img className='Work__Logo' src={Infy} alt='' /> Infosys Limited
+                    </h2>
+                    <p className='Work__Role'>Systems Engineer</p>
+                    <p className='Year2'>AUG 2021 - Apr 2023</p>
                 </div>
             </div>
         </div>
