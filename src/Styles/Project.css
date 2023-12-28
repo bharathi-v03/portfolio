@@ -9,6 +9,33 @@
     font-size: 300%;
 }
 
+.Project__Cards__Div {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 2rem;
+    width: calc(100vw - 12rem - 2rem);
+    color: var(--textColorBlue);
+}
+
+.Project__Card {
+    text-align: center;
+    border: 2px solid var(--textColorBlue);
+    background-color: rgba(102, 252, 242, 0.804);
+    border-radius: 10px;
+    transition: 0.5s;
+    padding: 1rem;
+    min-height: 35vh;
+    cursor: default;
+}
+
+.Project__Card:hover {
+    transform: scale(1.1);
+}
+
+.Card__Content {
+    color: var(--GrayDark);
+}
+
 .Project__Content {
     display: grid;
     grid-template-columns: auto auto;
@@ -131,13 +158,17 @@ span.blue-overlay {
         padding: 4rem 2rem;
     }
 
-    .Project__Content {
+    .Project__Content, .Project__Cards__Div {
         grid-template-columns: auto;
         width: calc(100vw - 4rem);
     }
 
     .Project1 {
         height: calc(100vw - 4rem);
+    }
+
+    .Project__Card {
+        min-height: initial;
     }
 
     .Project__Title {

@@ -10,7 +10,7 @@ function Home() {
             <div className='Home__Intro'>
                 <img src={logo} className="App-logo" alt="logo" />
                 <div className='Home__Text'>
-                    <p>Welcome to my world!</p>
+                    <p>Welcome to my corner of the digital realm!</p>
                     <h1 className='Home__Name'>Hi, I'm Bharathi.</h1>
                     <h1 className='Home__Role'>Front-End Web Developer.</h1>
                 </div>
