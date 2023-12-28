@@ -2,6 +2,7 @@ import React from 'react';
 import "../Styles/Work.css";
 import AU from "../Images/Work/AU.png";
 import Infy from "../Images/Work/Infy.png";
+import Tcs from "../Images/Work/Tcs.png";
 
 function Work() {
     return (
@@ -17,11 +18,20 @@ function Work() {
             </div>
             <div className='Work__Col2'>
                 <h1 className='Work__Title'>Experience</h1>
-                <h2 className='Work__Clg'>
-                    <img className='Work__Logo' src={Infy} alt='' /> Infosys Limited
-                </h2>
-                <p className='Work__Role'>Systems Engineer</p>
-                <p className='Year2'>AUG 2021 - Present</p>
+                <div className='Exp__div'>
+                    <h2 className='Work__Clg'>
+                        <img className='Work__Logo' src={Infy} alt='' /> Infosys Limited
+                    </h2>
+                    <p className='Work__Role'>Systems Engineer</p>
+                    <p className='Year2'>AUG 2021 - Apr 2023</p>
+                </div>
+                <div className='Exp__div'>
+                    <h2 className='Work__Clg'>
+                        <img className='Work__Logo' src={Tcs} alt='' /> Tata Consultancy Services
+                    </h2>
+                    <p className='Work__Role'>Systems Engineer</p>
+                    <p className='Year2'>Jul 2023 - Present</p>
+                </div>
             </div>
         </div>
     );

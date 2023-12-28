@@ -16,15 +16,16 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    row-gap: 1rem;
 }
 
 .Work__Col1 {
     background-color: var(--blueLight);
+    row-gap: 1rem;
 }
 
 .Work__Col2 {
     background-color: var(--GrayDark);
+    row-gap: 2rem;
 }
 
 .Edu__Title {
@@ -42,13 +43,14 @@
     width: 60px;
     height: 60px;
     object-fit: contain;
-    filter: drop-shadow(7px 7px 10px #1f28335c);
+    filter: drop-shadow(7px 7px 5px #1f28335c);
 }
 
 .Work__Logo {
     width: 100px;
-    height: 100px;
+    height: 50px;
     object-fit: contain;
+    filter: drop-shadow(7px 7px 5px var(--black));
 }
 
 .Edu__Clg {
@@ -56,6 +58,12 @@
     display: flex;
     column-gap: 1rem;
     align-items: center;
+}
+
+.Exp__div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
 }
 
 .Work__Clg {
@@ -118,7 +126,7 @@
 
     .Work__Logo {
         width: 70px;
-        height: 70px;
+        height: 30px;
     }
 
     .Edu__Clg,
