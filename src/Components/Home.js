@@ -15,11 +15,11 @@ function Home() {
                     <h1 className='Home__Role'>Front-End Web Developer.</h1>
                 </div>
                 <div className='Home__Icons'>
-                    <BsGithub className='Home__Icon' onClick={() => { window.location.assign("https://github.com/bharathi-v03") }} />
-                    <ImLinkedin className='Home__Icon' onClick={() => { window.location.assign("https://www.linkedin.com/in/bharathi-vikas") }} />
+                    <BsGithub className='Home__Icon' onClick={() => { window.open("https://github.com/bharathi-v03") }} />
+                    <ImLinkedin className='Home__Icon' onClick={() => { window.open("https://www.linkedin.com/in/bharathi-vikas") }} />
                 </div>
                 <button className='Resume'
-                    onClick={() => { window.location.assign("https://www.canva.com/design/DAF3QZqlNew/NWI6Mnvb03Cg_-LXYA5raQ/view?utm_content=DAF3QZqlNew&utm_campaign=designshare&utm_medium=link&utm_source=editor") }}>
+                    onClick={() => { window.open("https://www.canva.com/design/DAGgr3-0SlM/VNDFuczpb59BmdLdq0FRKg/view?utm_content=DAGgr3-0SlM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hd350a7dc11") }}>
                     View Resume
                 </button>
             </div>
