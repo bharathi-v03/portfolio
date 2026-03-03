@@ -46,7 +46,9 @@ function Navbar() {
                     className="Navbar__Link4"><p className="Navbar__LinkText">CONTACT</p></div>
                 <button
                     className="Navbar__Button Navbar__CloseButton"
-                    onClick={showNavbar}>
+                    onClick={showNavbar}
+                    aria-label="Close navbar"
+                >
                     <FaTimes />
                 </button>
             </nav>
@@ -54,7 +56,9 @@ function Navbar() {
                 style={{
                     color: color
                 }}
-                onClick={showNavbar}>
+                onClick={showNavbar}
+                aria-label="Open navbar"
+            >
                 <FaBars />
             </button>
         </div>
