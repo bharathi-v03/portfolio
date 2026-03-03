@@ -6,7 +6,7 @@ import logo from '../Images/logo.svg';
 
 function Home() {
     return (
-        <div className='Home' id='Home'>
+        <main className='Home' id='Home'>
             <div className='Home__Intro'>
                 <img src={logo} className="App-logo" alt="logo" />
                 <div className='Home__Text'>
@@ -32,7 +32,7 @@ function Home() {
                     Download Resume
                 </button>
             </div>
-        </div>
+        </main>
     );
 }
 
