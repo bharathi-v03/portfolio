@@ -30,6 +30,49 @@ function About() {
     // Round to nearest whole number
     const roundedYears = Math.round(totalYears);
 
+    const techSkills = [
+        {
+            title: 'HTML5',
+            srcImg: HTML5
+        },
+        {
+            title: 'CSS3',
+            srcImg: CSS3
+        },
+        {
+            title: 'JavaScript',
+            srcImg: Js
+        },
+        {
+            title: 'ReactJS',
+            srcImg: reactjs
+        },
+        {
+            title: 'Redux Toolkit',
+            srcImg: redux
+        },
+        {
+            title: 'Bootstrap',
+            srcImg: bootstrap
+        },
+        {
+            title: 'Material UI',
+            srcImg: mui
+        },
+        {
+            title: 'Tailwind CSS',
+            srcImg: tailwind
+        },
+        {
+            title: 'Git',
+            srcImg: git
+        },
+        {
+            title: 'Webpack',
+            srcImg: webpack
+        }
+    ];
+
     return (
         <div className='About' id='About'>
             <div className='About__Col1'>
@@ -39,46 +82,12 @@ function About() {
             <div className='About__Col2'>
                 <h1 className='About__Title2'>Technical skills</h1>
                 <div className='Logo__Images'>
-                    <div className='L__Div'>
-                        <img className='Logo' src={HTML5} alt='html' title='HTML5' />
-                        <p>HTML5</p>
-                    </div>
-                    <div className='L__Div'>
-                        <img className='Logo' src={CSS3} alt='html' title='CSS3' />
-                        <p>CSS3</p>
-                    </div>
-                    <div className='L__Div'>
-                        <img className='Logo' src={Js} alt='' title='JavaScript' />
-                        <p>JavaScript</p>
-                    </div>
-                    <div className='L__Div'>
-                        <img className='Logo' src={reactjs} alt='' title='ReactJS' />
-                        <p>ReactJS</p>
-                    </div>
-                    <div className='L__Div'>
-                        <img className='Logo' src={redux} alt='' title='Redux Toolkit' />
-                        <p>Redux Toolkit</p>
-                    </div>
-                    <div className='L__Div'>
-                        <img className='Logo' src={bootstrap} alt='' title='Bootstrap' />
-                        <p>Bootstrap</p>
-                    </div>
-                    <div className='L__Div'>
-                        <img className='Logo' src={mui} alt='' title='Material UI' />
-                        <p>Material UI</p>
-                    </div>
-                    <div className='L__Div'>
-                        <img className='Logo' src={tailwind} alt='' title='Tailwind CSS' />
-                        <p>Tailwind CSS</p>
-                    </div>
-                    <div className='L__Div'>
-                        <img className='Logo' src={git} alt='' title='Git' />
-                        <p>Git</p>
-                    </div>
-                    <div className='L__Div'>
-                        <img className='Logo' src={webpack} alt='' title='Webpack' />
-                        <p>Webpack</p>
-                    </div>
+                    {techSkills.map((skill) =>
+                        <div className='L__Div' key={skill.title}>
+                            <img className='Logo' src={skill.srcImg} alt='' title={skill.title} />
+                            <p>{skill.title}</p>
+                        </div>
+                    )}
                 </div>
             </div>
         </div>

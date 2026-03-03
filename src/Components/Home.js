@@ -18,9 +18,18 @@ function Home() {
                     <BsGithub className='Home__Icon' onClick={() => { window.open("https://github.com/bharathi-v03") }} />
                     <ImLinkedin className='Home__Icon' onClick={() => { window.open("https://www.linkedin.com/in/bharathi-vikas") }} />
                 </div>
-                <button className='Resume'
-                    onClick={() => { window.open("https://www.canva.com/design/DAGgr3-0SlM/VNDFuczpb59BmdLdq0FRKg/view?utm_content=DAGgr3-0SlM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hd350a7dc11") }}>
-                    View Resume
+                <button
+                    className="Resume"
+                    onClick={() => {
+                        const link = document.createElement("a");
+                        link.href = "/files/PortfolioResume.pdf";
+                        link.download = "Bharathi-Resume.pdf";
+                        document.body.appendChild(link);
+                        link.click();
+                        document.body.removeChild(link);
+                    }}
+                >
+                    Download Resume
                 </button>
             </div>
         </div>
