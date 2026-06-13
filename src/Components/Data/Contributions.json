@@ -1,50 +1,26 @@
 [
-    {
-        "title": "Front-End Development",
-        "text": "Designed and developed scalable and responsive web applications using React, Redux, and SASS, enhancing user experience and performance across devices and ensuring cross-browser compatibility."
-    },
-    {
-        "title": "User-Centric Interface Design",
-        "text": "Translated client feedback into intuitive, high-performing interfaces, improving business process efficiency and delivering measurable user engagement improvements."
-    },
-    {
-        "title": "Debugging & Performance Profiling",
-        "text": "Utilized Chrome DevTools for real-time debugging, performance profiling, and front-end optimization."
-    },
-    {
-        "title": "API Testing & Integration",
-        "text": "Conducted API testing and debugging using Postman, ensuring reliable and efficient data communication."
-    },
-    {
-        "title": "Build Tools & Environment Configuration",
-        "text": "Basic experience in configuring Webpack, Tailwind, and environment variables (.env)."
-    },
-    {
-        "title": "RESTful API Integration",
-        "text": "Integrated and optimized RESTful APIs within React applications."
-    },
-    {
-        "title": "BFF Integration",
-        "text": "Integrated and modified Backend for Frontend (BFF) implementations using Node.js and Express.js in React projects."
-    },
-    {
-        "title": "Testing Tools",
-        "text": "Utilized Swagger for testing internal APIs, ensuring seamless integration and maintainability."
-    },
-    {
-        "title": "CI/CD Automation",
-        "text": "Utilized Jenkins for automating build, testing, and deployment processes."
-    },
-    {
-        "title": "Version Control & Repository Management",
-        "text": "Led Git workflows and managed GCP repositories to streamline version control strategies."
-    },
-    {
-        "title": "Cloud Debugging & Log Analysis",
-        "text": "Used SSH-in-browser to analyze BFF service logs via Bastion host in GCP for efficient debugging."
-    },
-    {
-        "title": "SDLC & Deployment Practices",
-        "text": "Followed SDLC best practices to design, implement, test, and deploy frontend modules efficiently."
-    }
+  {
+    "title": "Enterprise Frontend Development",
+    "text": "Build scalable, maintainable, and responsive web applications using React, Next.js, and modern frontend architectures that support complex business workflows and long-term product growth."
+  },
+  {
+    "title": "Performance Engineering",
+    "text": "Optimize application speed and user experience through code splitting, lazy loading, bundle optimization, and advanced React rendering strategies that reduce load times and improve responsiveness."
+  },
+  {
+    "title": "Scalable Application Architecture",
+    "text": "Design reusable component systems and predictable state management solutions using Redux Toolkit, Context API, and modern React patterns to support large-scale applications."
+  },
+  {
+    "title": "API & Platform Integration",
+    "text": "Integrate REST APIs and Backend-for-Frontend services to create reliable, efficient, and maintainable communication between frontend applications and backend platforms."
+  },
+  {
+    "title": "Cloud & Production Operations",
+    "text": "Diagnose and resolve production issues through cloud-based debugging, log analysis, deployment workflows, and CI/CD practices, ensuring application reliability and stability."
+  },
+  {
+    "title": "Accessibility & User Experience",
+    "text": "Deliver accessible, responsive, and user-centric interfaces that follow modern web standards and provide consistent experiences across devices and browsers."
+  }
 ]

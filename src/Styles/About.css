@@ -20,11 +20,17 @@
 }
 
 .About__Col1 {
-    background-color: var(--GrayDark);
+    background: radial-gradient(circle at top,
+            #1f2833 0%,
+            #0f141a 60%,
+            #0a0f14 100%);
 }
 
 .About__Col2 {
-    background-color: var(--blueLight);
+    background: linear-gradient(120deg,
+            #45a29e 0%,
+            #66d6d0 50%,
+            #9bf0ea 100%);
 }
 
 .About__Title {
@@ -47,8 +53,8 @@
 .Logo__Images {
     display: flex;
     flex-direction: row;
-    column-gap: 5vw;
-    row-gap: 5vw;
+    column-gap: 3vw;
+    row-gap: 3vw;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
@@ -131,5 +137,10 @@
     .Logo {
         width: 50px;
         height: 50px;
+    }
+
+    .Logo__Images {
+        column-gap: 5vw;
+        row-gap: 5vw;
     }
 }

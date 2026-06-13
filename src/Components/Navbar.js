@@ -41,7 +41,7 @@ function Navbar() {
                 <div onClick={() => { showNavbar(); document.getElementById('Project').scrollIntoView() }}
                     className="Navbar__Link2"><p className="Navbar__LinkText">PROJECTS</p></div>
                 <div onClick={() => { showNavbar(); document.getElementById('Work').scrollIntoView() }}
-                    className="Navbar__Link3"><p className="Navbar__LinkText">WORK</p></div>
+                    className="Navbar__Link3"><p className="Navbar__LinkText">EXPERIENCE</p></div>
                 <div onClick={() => { showNavbar(); document.getElementById('Contact').scrollIntoView() }}
                     className="Navbar__Link4"><p className="Navbar__LinkText">CONTACT</p></div>
                 <button

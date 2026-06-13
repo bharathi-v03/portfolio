@@ -19,12 +19,18 @@
 }
 
 .Work__Col1 {
-    background-color: var(--blueLight);
+    background: linear-gradient(120deg,
+            #9bf0ea 0%,
+            #66d6d0 50%,
+            #45a29e 100%);
     row-gap: 1rem;
 }
 
 .Work__Col2 {
-    background-color: var(--GrayDark);
+    background: radial-gradient(circle at top,
+            #1f2833 0%,
+            #0f141a 60%,
+            #0a0f14 100%);
     row-gap: 2rem;
 }
 

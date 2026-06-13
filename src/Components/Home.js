@@ -10,9 +10,9 @@ function Home() {
             <div className='Home__Intro'>
                 <img src={logo} className="App-logo" alt="logo" />
                 <div className='Home__Text'>
-                    <p>Welcome to my corner of the digital realm!</p>
+                    <p>Crafting scalable user experiences with React and Next.js.</p>
                     <h1 className='Home__Name'>Hi, I'm Bharathi.</h1>
-                    <h1 className='Home__Role'>Front-End Web Developer.</h1>
+                    <h1 className='Home__Role'>Frontend Engineer.</h1>
                 </div>
                 <div className='Home__Icons'>
                     <BsGithub className='Home__Icon' onClick={() => { window.open("https://github.com/bharathi-v03") }} />
