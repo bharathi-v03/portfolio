@@ -65,7 +65,7 @@
     width: 5vw;
     height: 5vw;
     object-fit: contain;
-    filter: drop-shadow(10px 10px 10px #1f2833c9);
+    filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.2));
     cursor: pointer;
     transition: 0.5s;
     position: relative;
@@ -140,7 +140,7 @@
     }
 
     .Logo__Images {
-        column-gap: 5vw;
-        row-gap: 5vw;
+        column-gap: 10px;
+        row-gap: 10px;
     }
 }

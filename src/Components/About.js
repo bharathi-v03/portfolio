@@ -51,7 +51,7 @@ function About() {
       srcImg: typescript,
     },
     {
-      title: "Redux Toolkit",
+      title: "Redux",
       srcImg: redux,
     },
     {
@@ -63,11 +63,11 @@ function About() {
       srcImg: sass,
     },
     {
-      title: "Tailwind CSS",
+      title: "Tailwind",
       srcImg: tailwind,
     },
     {
-      title: "Material UI",
+      title: "MUI",
       srcImg: mui,
     },
     {
