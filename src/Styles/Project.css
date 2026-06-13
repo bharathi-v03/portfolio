@@ -161,6 +161,7 @@ span.blue-overlay {
     .Project__Cards__Div {
         grid-template-columns: auto;
         width: calc(100vw - 4rem);
+        font-size: small;
     }
 
     .Project1 {

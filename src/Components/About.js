@@ -92,7 +92,7 @@ function About() {
     <div className="About" id="About">
       <div className="About__Col1">
         <h1 className="About__Title">About me</h1>
-        <p>
+        <p className="About__Desc">
           <strong>Frontend Engineer</strong> with{" "}
           <strong>{roundedYears}+ years of experience</strong> building
           enterprise-scale web applications using <strong>React</strong>,{" "}

@@ -121,17 +121,21 @@
     .About {
         flex-direction: column;
         height: auto;
+        min-height: 100vh;
     }
 
     .About__Col1 {
         height: auto;
+        min-height: calc(50vh - 4rem);
         width: calc(100vw - 4rem);
         padding: 2rem 2rem;
     }
 
     .About__Col2 {
-        height: 50vh;
+        height: auto;
+        min-height: calc(50vh - 4rem);
         width: calc(100vw - 4rem);
+        padding: 2rem 2rem;
     }
 
     .Logo {
@@ -142,5 +146,9 @@
     .Logo__Images {
         column-gap: 10px;
         row-gap: 10px;
+    }
+
+    .About__Desc {
+        font-size: small;
     }
 }
