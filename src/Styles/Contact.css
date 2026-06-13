@@ -74,6 +74,10 @@
     width: fit-content;
 }
 
+.Contact__Btn__Href {
+    width: fit-content;
+}
+
 .Contact__Btn__Log {
     font-family: 'Poppins', sans-serif;
     border: 3px solid var(--textColorBlue);
